@@ -1,17 +1,41 @@
 import App from "next/app";
 import Head from "next/head";
 import Link from "next/link";
-import "../styles/globals.css"
 import "../assets/css/main.css";
 import "../assets/css/hello.css";
 import "../assets/css/about.css";
 import "../assets/css/exp.css";
 import "../assets/css/works.css";
 import { Suspense, createContext, useState, useEffect } from "react";
+import { createGlobalStyle } from "styled-components";
 import { fetchAPI } from "../lib/api";
 
 // Store Strapi Global object in context
 export const GlobalContext = createContext({});
+
+const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: "TimesNewerRoman";
+  src: url("/fonts/TimesNewerRoman-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url("/fonts/RobotoMono-VariableFont_wght.ttf");
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+`;
 
 const MyApp = ({ Component, pageProps }) => {
   const { page } = pageProps;
@@ -20,25 +44,29 @@ const MyApp = ({ Component, pageProps }) => {
     <>
       <Head>
         <link
+          rel="preload"
           href="/fonts/Quicksand-VariableFont_wght.ttf"
           as="font"
-          rel="preload"
+          type="font/woff"
           crossOrigin=""
           />
         <link
+          rel="preload"
           href="/fonts/RobotoMono-VariableFont_wght.ttf"
           as="font"
-          rel="preload"
+          type="font/woff"
           crossOrigin=""
           />
         <link
+          rel="preload"
           href="/fonts/TimesNewerRoman-Regular.otf"
           as="font"
-          rel="preload"
+          type="font/woff"
           crossOrigin=""
           />
       </Head>
       <Suspense fallback={<p>Loading</p>}/>
+      <GlobalStyle />
       <Component {...pageProps} />
     </>
   );
