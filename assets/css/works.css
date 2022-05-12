@@ -1,0 +1,31 @@
+.section4 {
+  position: relative;
+}
+
+.actual-links {
+  z-index: 4;
+  position: absolute;
+  width: 55vw;
+  height: 50vh;
+  padding-top: 1rem;
+}
+
+.link-overlays {
+  cursor: pointer;
+  background-color: rgba(50, 224, 196, .25);
+  width: 55vw;
+  height: 50vh;
+  border-radius: 1.5rem;
+  z-index: 3;
+  position: absolute;
+}
+
+.link-previews {
+  width: 55vw;
+  height: 50vh;
+  border: 1px solid #39A2DB;
+  border-radius: 1.5rem;
+  pointer-events: none;
+  z-index: 2;
+  position: absolute;
+}

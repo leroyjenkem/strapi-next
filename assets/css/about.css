@@ -1,0 +1,10 @@
+.section2 {
+  display: grid;
+  grid-template-columns: 32vw 30vw;
+}
+
+.imagewrap {
+  padding-top: 2rem;
+  max-height: 18rem;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 45%, transparent 100%);
+}

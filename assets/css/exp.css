@@ -1,0 +1,90 @@
+.Tabs {
+  width: 70vw;
+  padding: .5rem 1rem;
+  margin-top: .75rem;
+  color: #E8F0F2;
+  border: 1px solid #39A2DB;
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: 15vw 50vw;
+  grid-column-gap: 1.5vw;
+}
+
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.TabList {
+  border: 1px solid #39A2DB;
+  border-radius: 1.5rem;
+  padding-left: 0px;
+}
+
+.Tab {
+  padding: 1rem;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.Tab--selected {
+  background: rgba(50, 224, 196, 0.15);
+}
+
+.Tab--disabled {
+  color: GrayText;
+  cursor: default;
+}
+
+.Tab:hover {
+  background: rgba(50, 224, 196, 0.3);
+}
+
+.Tab:first-child {
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+}
+
+.Tab:last-child {
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.TabPanel {
+  display: none;
+}
+
+div[class$="panel--selected"] {
+  display: block;
+  margin: 1.2rem 0.1rem;
+  background: rgba(50, 224, 196, .1);
+  border: 1px solid #39A2DB;
+  border-radius: 1.5rem;
+}
+
+div[class$="panel--selected"] p {
+  font-family: "Dank Mono", ui-monospace, monospace;
+  margin: 1rem 1rem;
+}
+
+div[class$="panel--selected"] .titleheading {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+div[class$="panel--selected"] .title-duration {
+  font-size: .9rem;
+  padding-left: 1.5rem;
+}
+
+div[class$="panel--selected"] .title-location {
+  font-size: .9rem;
+  padding-left: 1.5rem;
+  margin-top: -0.75rem;
+}
+
+div[class$="panel--selected"] .title-desc {
+  font-size: 1rem;
+  padding-left: 1.75rem;
+  padding-right: 2rem;
+}

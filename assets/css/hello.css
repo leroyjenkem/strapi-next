@@ -1,0 +1,17 @@
+div[class^="section"] h1 {
+  font-family: 'Times-newer-roman';
+  font-size: 5.5em;
+  font-weight: normal;
+  letter-spacing: -0.05em;
+  margin: auto;
+  float: left;
+  padding-top: 5rem;
+}
+
+#heading {
+  font-size: 1.2em;
+  padding-top: .5rem;
+  margin: auto;
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+}
