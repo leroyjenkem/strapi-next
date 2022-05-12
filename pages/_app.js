@@ -16,6 +16,20 @@ const MyApp = ({ Component, pageProps }) => {
 
   return (
     <>
+      <Head>
+        <link
+          href="../asset/fonts/Quicksand-VariableFont_wght.ttf"
+          rel="stylesheet"
+          />
+        <link
+          href="../assets/fonts/RobotoMono-VariableFont_wght.ttf"
+          rel="stylesheet"
+          />
+        <link
+          href="../assets/fonts/TimesNewerRoman-Regular.ttf"
+          rel="stylesheet"
+          />
+      </Head>
       <Suspense fallback={<p>Loading</p>}/>
       <Component {...pageProps} />
     </>
