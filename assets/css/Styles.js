@@ -12,7 +12,7 @@ height: 2500px;
 
 export const Button = styled.div`
 position: fixed;
-width: 100%;
+width: auto;
 left: 1em;
 bottom: 40px;
 height: 1em;

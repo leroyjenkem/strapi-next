@@ -13,7 +13,7 @@ const LinkScripts = dynamic(() => {
 const Home = ({ pages }) => {
   return (
     <Layout pages={pages}>
-        <div className="">
+        <div className="app">
           <Pages pages={pages} />
         </div>
         <LinkScripts />

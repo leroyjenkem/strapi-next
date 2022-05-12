@@ -1,12 +1,12 @@
 .Tabs {
-  width: 70vw;
+  width: 62.5vw;
   padding: .5rem 1rem;
   margin-top: .75rem;
   color: #E8F0F2;
   border: 1px solid #39A2DB;
   border-radius: 1.5rem;
   display: grid;
-  grid-template-columns: 15vw 50vw;
+  grid-template-columns: 15vw 45vw;
   grid-column-gap: 1.5vw;
 }
 

@@ -17,6 +17,9 @@ const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: "TimesNewerRoman";
   src: url("/fonts/TimesNewerRoman-Regular.otf");
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
 }
 @font-face {
   font-family: "Quicksand";
@@ -25,6 +28,8 @@ const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: "RobotoMono";
   src: url("/fonts/RobotoMono-VariableFont_wght.ttf");
+  font-style: lighter;
+  font-weight: 200;
 }
 `;
 

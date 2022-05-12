@@ -8,10 +8,10 @@
   width: 55vw;
   height: 50vh;
   padding-top: 1rem;
+  cursor: pointer;
 }
 
 .link-overlays {
-  cursor: pointer;
   background-color: rgba(50, 224, 196, .25);
   width: 55vw;
   height: 50vh;
