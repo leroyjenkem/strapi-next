@@ -17,7 +17,7 @@ a {
 
 @font-face {
   font-family: "TimesNewerRoman";
-  src: url("/fonts/TimesNewerRoman-Regular.ttf");
+  src: url("/fonts/TimesNewerRoman-Regular.otf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;

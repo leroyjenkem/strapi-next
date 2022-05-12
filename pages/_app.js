@@ -1,6 +1,7 @@
 import App from "next/app";
 import Head from "next/head";
 import Link from "next/link";
+import "../styles/globals.css"
 import "../assets/css/main.css";
 import "../assets/css/hello.css";
 import "../assets/css/about.css";
@@ -31,7 +32,7 @@ const MyApp = ({ Component, pageProps }) => {
           crossOrigin=""
           />
         <link
-          href="/fonts/TimesNewerRoman-Regular.ttf"
+          href="/fonts/TimesNewerRoman-Regular.otf"
           as="font"
           rel="preload"
           crossOrigin=""
