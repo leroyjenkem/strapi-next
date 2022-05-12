@@ -1,5 +1,6 @@
 import App from "next/app";
 import Head from "next/head";
+import Link from "next/link";
 import "../assets/css/main.css";
 import "../assets/css/hello.css";
 import "../assets/css/about.css";
@@ -18,16 +19,22 @@ const MyApp = ({ Component, pageProps }) => {
     <>
       <Head>
         <link
-          href="../asset/fonts/Quicksand-VariableFont_wght.ttf"
-          rel="stylesheet"
+          href="/fonts/Quicksand-VariableFont_wght.ttf"
+          as="font"
+          rel="preload"
+          crossOrigin=""
           />
         <link
-          href="../assets/fonts/RobotoMono-VariableFont_wght.ttf"
-          rel="stylesheet"
+          href="/fonts/RobotoMono-VariableFont_wght.ttf"
+          as="font"
+          rel="preload"
+          crossOrigin=""
           />
         <link
-          href="../assets/fonts/TimesNewerRoman-Regular.ttf"
-          rel="stylesheet"
+          href="/fonts/TimesNewerRoman-Regular.ttf"
+          as="font"
+          rel="preload"
+          crossOrigin=""
           />
       </Head>
       <Suspense fallback={<p>Loading</p>}/>
