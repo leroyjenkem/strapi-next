@@ -17,23 +17,14 @@ const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: "TimesNewerRoman";
   src: url("/fonts/TimesNewerRoman-Regular.otf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
 }
 @font-face {
   font-family: "Quicksand";
   src: url("/fonts/Quicksand-VariableFont_wght.ttf");
-  font-style: medium;
-  font-weight: 500;
-  font-display: swap;
 }
 @font-face {
   font-family: "RobotoMono";
   src: url("/fonts/RobotoMono-VariableFont_wght.ttf");
-  font-style: medium;
-  font-weight: 500;
-  font-display: swap;
 }
 `;
 
